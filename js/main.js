@@ -22,16 +22,18 @@ let isTrue;
 $(document).ready(function() {
     $('#wizard').toggle();
     $('#input_active_logo').toggle();
-    // isTrue = false;
-    // if(isTrue){
-    //     $('#btn').css('marginLeft', '15px');
-    // }
+    $('#icon_active_shopping').toggle();
+    $('#nav_2').toggle();
 });
 
 $('#btn').click(function(){
     $('#wizard').toggle();
     $('#input_off_logo').toggle();
     $('#input_active_logo').toggle();
+    $('#icon_active_shopping').toggle();
+    $('#icon_shopping').toggle();
+    $('#nav_active').toggle();
+    $('#nav_2').toggle();
     // isTrue = true;
     // $('#btn').css('marginLeft', '15px');
 

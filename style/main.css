@@ -61,7 +61,7 @@ header .mynavbar {
 
 .logo_active {
     margin-left: 98px;
-    margin-right: 144px;
+    margin-right: 40px;
     margin-top: 26px;
     margin-bottom: 26px;
     color: white;
@@ -105,7 +105,7 @@ header nav a:hover, .mynavbar i:hover {
     padding: 6px;
     border: none;
     margin-top: 8px;
-    margin-right: 16px;
+    margin-right: 0;
     font-size: 17px;
 }
 
@@ -116,7 +116,10 @@ header nav a:hover, .mynavbar i:hover {
 
 div .icon-shopping-cart {
     margin-right: 98px;
+}
 
+#icon_active_shopping {
+    margin-top: 20px;
 }
 
 /* Carosel */
@@ -649,8 +652,8 @@ section.our_post {
 
 .text-content {
     padding: 280px 0;
-    /* background-image: url("../img/image_megaPromotion.png"); */
-    background-image: linear-gradient(to right, transparent -30%, var(--bg_white) 100%), url("../img/shopping_cart_promotion.png");
+    /* background-image: linear-gradient(to right, transparent -30%, var(--bg_white) 100%), url("../img/shopping_cart.png"); */
+    background-image: linear-gradient(to right, transparent -30%, #e2d1c3 100%), url("../img/shopping_cart.png");
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -1227,6 +1230,12 @@ h1.logo {
 
 @media(max-width: 895px) {
 
+    /* nav */
+
+    #icon_active_shopping {
+        margin-right: 30px;
+    }
+
     /* carousel */
 
     .carouselTextFull {
@@ -1295,13 +1304,26 @@ h1.logo {
         margin-right: 60px;
     }
 
+    .logo_active {
+        margin-left: 90px;
+        margin-right: 30px;
+    }
+
     header nav {
         margin-right: 60px;
         margin-top: 37px;
     }
 
+    .nav_2 {
+        margin-right: 0;
+    }
+
     .icon-search {
         margin-right: 15px;
+    }
+
+    #icon_active_shopping {
+        margin-right: 70px;
     }
 
     /* best products */
@@ -1507,6 +1529,24 @@ h1.logo {
 
 }
 
+@media(max-width: 754px) {
+    
+    /* nav */
+
+    .logo_active {
+        margin-right: 20px;
+    }
+
+    .nav_2 {
+        margin-right: -17px;
+    }
+
+    #icon_active_shopping {
+        margin-right: 100px;
+    }
+
+}
+
 @media(max-width: 425px) {
 
     /* nav-bar */
@@ -1522,6 +1562,11 @@ h1.logo {
         margin-top: 0;
     }
 
+    .logo_active {
+        margin-left: 20px;
+        margin-top: 2px;
+    }
+
     header nav {
         margin-top: 10px;
     }   
@@ -1534,6 +1579,10 @@ h1.logo {
     
     div .icon-search {
         margin-right: 10px;
+    }
+
+    .icon-search input[type=text] {
+        margin-right: 0;
     }
 
     /* carousel */
